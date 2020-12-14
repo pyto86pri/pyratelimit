@@ -32,7 +32,7 @@ jobs:
     - name: Format
       run: |
         poetry run format
-        if ! git diff --quiet python_project tests ; then exit 1 ; fi
+        if ! git diff --quiet pyratelimit tests ; then exit 1 ; fi
     - name: Typecheck
       run: |
         poetry run typecheck
